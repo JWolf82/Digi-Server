@@ -1,0 +1,63 @@
+<div ng-controller="mCtrl">
+ <div class="col-md-7">
+     <h3>Seat</h3>
+          <form>
+              <input type="radio" name="seat" value="1" ng-model="radio1"> 1
+              <input type="radio" name="seat" value="2" ng-model="radio2"> 2
+              <input type="radio" name="seat" value="3"> 3
+              <input type="radio" name="seat" value="4"> 4
+              <input type="radio" name="seat" value="5"> 5
+          </form>
+    <h3>Entrees</h3>
+        <table class="table">
+            <tr ng-repeat="item in menuItem | limitTo: 8 track by item.stockNum">
+                <td class="checkb"><input type="checkbox" ng-model="item.checked" ng-change="hCtrl.check(item)" ></td>
+                      <td class="itemname">{{item.item}}</td>
+                      <td class="price">{{item.price | currency : symbol : fractionSize}}</td> 
+                       <td>{{item.desc}}</td>
+            </tr>
+        </table>
+        
+    <h3>Drinks</h3>
+        <table class="table">
+            <tr ng-repeat="item in menuItem | limitTo : -11 | limitTo : 9">
+                <td class="checkb"><input type="checkbox" ng-model="item.checked" ng-change="hCtrl.check(item)" ></td>
+                      <td class="itemname">{{item.item}}</td>
+                      <td class="price">{{item.price | currency : symbol : fractionSize}}</td> 
+                       <td>{{item.desc}}</td>
+            </tr>
+        </table>
+    
+    <h3>Desserts</h3>
+    <table class="table">
+            <tr ng-repeat="item in menuItem | limitTo : -2 | limitTo : 2">
+                <td class="checkb"><input type="checkbox" ng-model="item.checked" ng-change="hCtrl.check(item)" ></td>
+                      <td class="itemname">{{item.item}}</td>
+                      <td class="price">{{item.price | currency : symbol : fractionSize}}</td> 
+                       <td>{{item.desc}}</td>
+            </tr>
+        </table>
+        
+        <button type="button" id="subbut" ng-click="hCtrl.submitMenu(hCtrl.newMenu)">Submit Order</button>
+        <br>
+    </div>
+    <h2>Seat 1</h2>
+        <div class="col-md-5">
+                <div  class="seatbord">
+                    <div ng-repeat="item in menuItem" ng-show="item.checked">
+                        <p>{{item.item}} {{item.price | currency : symbol : fractionSize}}</p>
+                    </div>
+                </div>   
+                <span>{{hCtrl.totalCost | currency : symbol : fractionSize}}</span>
+        </div>
+        
+    <h2>Seat 2</h2>
+        <div class="col-md-5">
+                <div  class="seatbord">
+                    <div ng-repeat="item in menuItem" ng-show="item.checked">
+                        <p>{{item.item}} {{item.price | currency : symbol : fractionSize}}</p>
+                    </div>
+                </div>   
+                <span>{{hCtrl.totalCost | currency : symbol : fractionSize}}</span>
+        </div>
+</div>

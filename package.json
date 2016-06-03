@@ -1,0 +1,21 @@
+{
+  "name": "menu",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "lodash": "^4.13.1",
+    "mongoose": "^4.4.17",
+    "morgan": "^1.7.0",
+    "ng-range-filter": "^0.1.0"
+  },
+  "description": ""
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="menuApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Digi-Server</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/stylesheet.css" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="homeController.js"></script>
+    <script type="text/javascript" src="menuFactory.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="header">
+        <div class="col-md-8">
+          <h1><b>Jim's Diner</b></h1>
+          <h6>Powered by Digi-Server</h6>
+        </div>
+        <div class="col-md-offset-2 col-md-2">
+          <button class="mlogin">Manager Login</button>
+        </div>
+      </div>
+    <ui-view>
+
+    </ui-view>
+    </div>
+
+  </body>
+</html>

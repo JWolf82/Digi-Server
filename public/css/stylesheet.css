@@ -1,0 +1,69 @@
+/*Header*/
+#header {
+    background-color: #fff;
+}
+
+/*Manager Login*/
+    .mlogin {
+        margin-top: 15px;
+    }
+
+/*Headers and globals*/
+    h1, h3, h6 {
+        color: #6FCDE3;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    td {
+    padding: 3px;
+    margin: 0px;
+    }
+
+
+/*Table alignments and Form*/
+.itemname{
+    width: 350px;
+    text-align: left;
+}
+
+.price {
+    text-align:left;
+    width: 100px;
+}
+
+
+
+.checkb {
+    width: 14px;
+}
+
+#subbut {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*order container*/
+.seatbord {
+    height: 200px;
+    border: 1px solid #DBDAD8;
+    overflow-y: auto;
+    padding: 10px;
+    
+   -webkit-box-shadow: inset 0px 0px 41px 0px rgba(219,218,216,.25);
+-moz-box-shadow: inset 0px 0px 41px 0px rgba(219,218,216,.25);
+box-shadow: inset 0px 0px 41px 0px rgba(219,218,216,.25);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
